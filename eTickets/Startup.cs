@@ -30,6 +30,9 @@ namespace eTickets
             //Dbcontex config
             services.AddDbContext<AppDbContext>(options =>options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString")));
             services.AddControllersWithViews();
+          //  services..AddRazorRuntimeCompilation();
+            //  services.AddControllersWithViews();
+
 
         }
 
