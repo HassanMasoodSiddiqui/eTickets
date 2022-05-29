@@ -2,9 +2,9 @@
 
 namespace eTickets.Models
 {
-    public class AppDbContex:DbContext
+    public class AppDbContext:DbContext
     {
-        public AppDbContex(DbContextOptions<AppDbContex> options) :base(options)
+        public AppDbContext(DbContextOptions<AppDbContext> options) :base(options)
         {
 
         }
@@ -22,10 +22,10 @@ namespace eTickets.Models
 
             base.OnModelCreating(modelBuilder);
         }
-        public DbSet<Actor> Actor { get; set; }
+        public DbSet<Actor> Actors { get; set; }
         public DbSet<Movie> Movies { get; set; }
-        public DbSet<Actor_Movie> Actor_Movie { get; set; }
-        public DbSet<Cinema> Cinema { get; set; }
+        public DbSet<Actor_Movie> Actor_Movies{ get; set; }
+        public DbSet<Cinema> Cinemas { get; set; }
         public DbSet<Producer> Producers { get; set; }
 
     }
