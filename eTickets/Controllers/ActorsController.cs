@@ -15,6 +15,8 @@ namespace eTickets.Controllers
         }
         public async Task<IActionResult> Index()
         {
+
+            //this is commenting
             var actor = await _context.Actors.ToListAsync();
             return View(actor);
         }
